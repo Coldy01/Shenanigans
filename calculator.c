@@ -2,15 +2,15 @@
 // to prevent the input to be a letter or a symbol, this function will keep asking for a number until a valid number is entered
 int getNumber() {
     int num;
+    char ch;
 
     while (1) {
-        if (scanf("%d", &num) == 1) {
+        if (scanf("%d%c", &num, &ch) == 2 && ch == '\n') {
             return num;
         }
 
-        printf("Please enter a number: ");
+        printf("Please enter a valid number: ");
 
-        // Clear the invalid input
         while (getchar() != '\n');
     }
 }
@@ -82,5 +82,6 @@ int main() {
   if (Operator != 'd' && Operator != 'D' && Operator != 'm' && Operator != 'M' && Operator != 'a' && Operator != 'A' && Operator != 's' && Operator != 'S') {
     printf("Error: Invalid operator entered. Please use d, m, a, or s.\n for division, multiplication, addition, or subtraction respectively.\n");
   } 
+
+
   }
-// i cant sleep so i made this with my little newb skills in programming -cy 08/02/2026
