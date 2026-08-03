@@ -82,6 +82,4 @@ int main() {
   if (Operator != 'd' && Operator != 'D' && Operator != 'm' && Operator != 'M' && Operator != 'a' && Operator != 'A' && Operator != 's' && Operator != 'S') {
     printf("Error: Invalid operator entered. Please use d, m, a, or s.\n for division, multiplication, addition, or subtraction respectively.\n");
   } 
-
-
   }
